@@ -65,9 +65,8 @@ body
 	min-width: 320px
 	position: relative
 	line-height: normal
-	font-family: "Lato", sans-serif
+	font-family: "ProximaNova", sans-serif
 	overflow-x: hidden
-	padding-top: 123px
 
 img
 	display: block
@@ -78,39 +77,664 @@ img
 	max-width: 1360px
 	padding: 0 40px
 	margin: 0 auto
-.title
-	color: $dark
-	font-family: "GothamProBlack"
-	font-size: 64px
-	line-height: 70px
-.subtitle
-	color: $dark
-	font-family: "GothamProBlack"
-	font-size: 48px
-	line-height: 43.84px
-	&_white
-		color: #ffffff
-.active-color
-	color: $active
+	position: relative
 .text
 	color: #56585e
 	font-size: 16px
 	line-height: 23.91px
 .slick-slide
 	outline: none
-.accent-text
-	color: $accent
+.nowrap
+	white-space: nowrap
 .btn
 	outline: none
 	border: none
 	color: #ffffff
-	font-family: "LatoBold"
-	font-size: 12px
-	text-transform: uppercase
+	font-family: "ProximaNovaBold"
+	font-size: 18px
 	display: inline-block
-	padding: 20px 32px
+	padding: 0px 27px
 	text-decoration: none
-	background: $active
+	background: #50cc52
 	cursor: pointer
+	line-height: 46px
+	transition: background-color .5s ease
+	&:hover
+		background: darken(#50cc52, 10%)
+.proxi_light
+	font-family: "ProximaNovaLight"
+.lumberjack
+	font-family: "Lumberjack"
+.introscript
+	font-family: "IntroScript"
+.new-roman
+	font-family: "TimesNewRoman"
+.proxi_bold
+	font-family: "ProximaNovaBold"
+.title
+	&-span
+		font-size: 60px
+		line-height: 57px
+	&-row
+		&-bg
+			display: inline-block
+			position: relative
+			padding: 0 10px 0 5px
+			.title-span
+				color: #ffffff
+		&-overlay
+			width: 100%
+			height: 100%
+			background: url(../img/text_bg.svg) no-repeat center
+			background-size: contain
+			top: 0
+			left: 0
+			display: block
+			position: absolute
+			z-index: -1
+.subtitle
+	&-span
+		font-size: 64px
+		line-height: 54px
+	&-bg
+		position: relative
+		display: inline-block
+		color: #ffffff
+		padding: 0 5px 5px 5px
+	&-overlay
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -1
+		&_blue
+			background: url(../img/text_topbg.svg) no-repeat center
+			background-size: contain
+.header
+	padding-top: 50px
+	position: relative
+	z-index: 3
+	&-content
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-logo
+		display: inline-block
+		width: 215px
+	&-left
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+	&-info
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		flex-direction: column
+		margin-left: 50px
+		&-link
+			color: #9e9e9e
+			font-family: "ProximaNovaSemibold"
+			font-size: 15px
+			text-decoration: none
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+			&_underline
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 1px
+					background: #9e9e9e
+					left: 0
+					bottom: 0
+	&-right
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-top: -20px
+	&-nav
+		margin-right: 40px
+	&-list
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		&-item
+			margin-right: 40px
+			&:last-child
+				margin-right: 0
+		&-link
+			color: #5d5d5c
+			font-family: "ProximaNovaBold"
+			font-size: 18px
+			text-decoration: none
+.first
+	padding: 50px 0 700px
+	position: relative
+	&-mask
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 190px
+		left: 0
+		pointer-events: none
+		background: url('../img/bg1.jpg') no-repeat center
+		background-size: cover
+	&-overlay
+		width: 100%
+		height: auto
+		position: absolute
+		left: 0
+		&_top
+			height: 44vw
+			background: url(../img/top.svg) no-repeat center
+			background-size: cover
+			top: -17vw
+			z-index: 2
+		&_bottom
+			bottom: -25px
+			height: 26vw
+			background: url(../img/bottom.svg) no-repeat center
+			background-size: cover
+	&-content
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		position: relative
+		z-index: 3
+	&-left
+		width: 500px
+		flex-shrink: 0
+		margin-top: 35px
+		&-slider
+			padding-bottom: 40px
+		&-btn
+			width: 40px
+			height: 22px
+			cursor: pointer
+			background: url(../img/arrow-next.svg) no-repeat center
+			background-size: contain
+			transition: transform .5s ease
+			&:hover
+				transform: translateX(5px)
+		&-nav
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			.slick-dots
+				position: static
+				width: 100%
+				display: flex
+				align-items: center
+				justify-content: flex-start
+			.slick-dots li, .slick-dots li button
+				width: 10px
+				height: 10px
+				margin: 0
+			.slick-dots li
+				display: flex
+				align-items: center
+				justify-content: center
 
+
+	&-right
+		width: 645px
+		margin: 0 45px
+	&-title
+		color: #3f3f3f
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		letter-spacing: -1.7px
+.intro
+	&__dots
+		margin-right: 20px
+		&_dot
+			width: 4px
+			height: 4px
+			border-radius: 4px
+			cursor: pointer
+			display: block
+			background-color: rgba(63, 63, 63, 0.5)
+.slick-active .intro__dots_dot
+	background-color: #ea4548
+.second
+	position: relative
+	z-index: 3
+	margin-top: -135px
+	&-content
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&_left
+		width: 400px
+	&-right
+		width: 545px
+		&-text
+			color: #666666
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			letter-spacing: -0.1px
+		&-img
+			width: 48px
+			margin: 0 auto 70px
+	&-video
+		width: 100%
+		font-size: 0
+		margin: 200px 0 0 60px
+		position: relative
+		&-link
+			display: inline-block
+			position: relative
+			z-index: 3
+			border-radius: 50%
+			overflow: hidden
+		&-overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: rgba(36, 36, 36, 0.7)
+		&-block
+			position: absolute
+			top: 54%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 2
+			text-align: center
+		&-text
+			color: #ffffff
+			font-family: "ProximaNovaSemibold"
+			font-size: 15px
+			text-decoration: none
+			margin-top: 10px
+	&-play
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		background: #ffffff
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 auto
+		transition: background-color .5s ease
+		&:hover
+			background: #57CA5A
+			.second-play-svg
+				fill: #ffffff
+		&-img
+			width: 12px
+			height: 12px
+		&-svg
+			fill: #e86b55
+			transition: fill .5s ease
+	&-circle
+		&-green
+			width: 470px
+			height: 470px
+			background-color: #50cc52
+			position: absolute
+			left: -60px
+			top: -70px
+			border-radius: 50%
+			z-index: 1
+		&-red
+			width: 445px
+			height: 427px
+			background-color: #ea4548
+			border-radius: 50%
+			position: absolute
+			top: -13px
+			left: -45px
+			z-index: 2
+		&-blue
+			width: 417px
+			height: 400px
+			background-color: #7056df
+			border-radius: 50%
+			position: absolute
+			z-index: 3
+			right: -10px
+			top: 5px
+.third
+	padding: 110px 0 0
+	position: relative
+	background: #e86b55
+	&-overlay
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 33vw
+		background: url(../img/footter.svg), linear-gradient(to bottom, #ffffff 90%, #e86b55)
+		background-position: top center, top left
+		background-repeat: no-repeat
+		background-size: cover, cover
+	&-subtitle
+		font-size: 0
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		position: relative
+		z-index: 2
+	&-block
+		padding: 85px 0 75px
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+		position: relative
+		z-index: 2
+	&-slider
+		width: calc(100% + 40px)
+		margin-left: -20px
+		&-item
+			padding-top: 20px
+		.slick-track
+			padding: 0 20px
+		&-block
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+				//box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+			&_first
+				width: 407px
+				height: 303px
+				transform: rotate(-5deg)
+			&_second
+				width: 407px
+				height: 300px
+				transform: rotate(3deg)
+				margin-left: -5px
+			&_third
+				width: 407px
+				height: 303px
+				transform: rotate(-6deg)
+				margin-left: -10px
+		&-span
+			position: relative
+		&-overlay
+			width: calc(100% + 10px)
+			height: 100%
+			position: absolute
+			top: 0
+			left: -5px
+			z-index: -1
+			&_blue
+				background: #76c8eb
+			&_yellow
+				background: #e1c62b
+			&_green
+				background: #50cc52
+		&-more
+			color: rgba(0, 0, 0, 0.51)
+			font-family: "ProximaNovaBold"
+			font-size: 16px
+			text-decoration: none
+			display: inline-block
+			&_first
+				margin: 12px 0 0 40px
+			&_second
+				margin: 18px 0 0 25px
+			&_third
+				margin: 12px 0 0 25px
+		&-title
+			font-family: "ProximaNovaExtrabold"
+			color: #ffffff
+			font-size: 32px
+			line-height: 35.87px
+			position: relative
+			z-index: 2
+			&_first
+				margin: -12px 0 0 40px
+			&_second
+				margin: -12px 0 0 25px
+			&_third
+				margin: -15px 0 0 22px
+	&-btns
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 150px
+		position: absolute
+		top: -25px
+		right: 190px
+	&-btn
+		cursor: pointer
+		font-size: 0
+		transition: transform .5s ease
+		&_back
+			&:hover
+				transform: translateX(-5px)
+		&_next
+			&:hover
+				transform: translateX(5px)
+		&-svg
+			width: 40px
+			height: 22px
+			rect
+				fill: #ffffff
+		&-line
+			width: 45px
+			height: 1px
+			background: rgba(0, 0, 0, 0.1)
+			transform: rotate(-45deg)
+	&-img
+		position: absolute
+		top: -285px
+		right: 40px
+		width: 620px
+.footer
+	position: relative
+	padding: 75px 0 60px
+	&-overlay
+		width: 100%
+		height: 100%
+		background: #e86b55
+		top: 0
+		left: 0
+		position: absolute
+	&-content
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&-left
+		width: 600px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		&-item
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-logo
+			width: 220px
+			display: inline-block
+			margin-bottom: 15px
+		&-text
+			color: rgba(255, 255, 255, 0.6)
+			font-size: 13px
+			line-height: 19.93px
+			&_bottom
+				margin-top: 10px
+				display: flex
+				align-items: center
+				justify-content: flex-start
+		&-link
+			width: 115px
+			margin-left: 10px
+			display: inline-block
+	&-title
+		color: #ffffff
+		font-family: "ProximaNovaSemibold"
+		font-size: 15px
+		line-height: 17.93px
+		letter-spacing: 7.47px
+		margin-bottom: 30px
+	&-link
+		color: #ffffff
+		font-family: "ProximaNovaSemibold"
+		font-size: 15px
+		line-height: 19.93px
+		text-decoration: none
+		&_underline
+			position: relative
+			&:before
+				position: absolute
+				width: 100%
+				height: 1px
+				left: 0
+				bottom: 0
+				content: ''
+				background: #ffffff
+	&-right
+		width: 400px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		&-item
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-text
+			color: #ffffff
+			font-family: "ProximaNovaSemibold"
+			font-size: 15px
+			line-height: 17.93px
+		&-link
+			color: rgba(0, 0, 0, 0.5)
+			font-family: "ProximaNovaBold"
+			font-size: 14px
+			position: relative
+			margin-top: 8px
+			text-decoration: none
+			&:before
+				position: absolute
+				content: ''
+				left: 0
+				bottom: 0
+				width: 100%
+				height: 1px
+				background-color: rgba(0, 0, 0, 0.5)
+	&-lang
+		display: flex
+		align-items: center
+		justify-content: center
+		&-item
+			width: 40px
+			height: 40px
+			color: #ffffff
+			font-family: "ProximaNovaBold"
+			font-size: 15px
+			text-transform: uppercase
+			display: flex
+			align-items: center
+			justify-content: center
+			text-decoration: none
+			background: rgba(255, 255, 255, 0.3)
+			transition: background-color.5s ease
+			outline: none
+			&:hover
+				background: rgba(255, 255, 255, 0.1)
+			&.active
+				background: rgba(255, 255, 255, 0.1)
+.about
+	padding: 85px 0 85px
+	position: relative
+	&-subtitle
+		letter-spacing: -1px
+	&-overlay
+		width: 100%
+		height: 37vw
+		position: absolute
+		left: 0
+		top: 100px
+		background: url(../img/about-bg_pic.svg) no-repeat center
+		background-size: cover
+		z-index: -1
+	&-center
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&-left
+		width: 475px
+	&-text
+		color: #666666
+		font-size: 16px
+		line-height: 24px
+		letter-spacing: -0.1px
+		margin-top: 35px
+	&-right
+		width: 580px
+		margin: 25px 20px 0 0
+	&-territory
+		display: flex
+		align-items: center
+		justify-content: space-between
+.territory
+	margin-top: 105px
+	&-left
+		width: 625px
+	&-right
+		width: 545px
+		margin-top: -10px
+.advantages
+	padding: 25px 0 50px
+	&-contant
+		position: relative
+	&-img
+		position: absolute
+		top: -75px
+		right: 40px
+		width: 710px
+	&-list
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-top: 105px
+	&-item
+		width: 20%
+		cursor: pointer
+		&:hover
+			.advantages-block
+				transform: rotate(0)
+	&-block
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 225px
+		height: 225px
+		transition: transform .2s ease
+		&_first
+			background: #bf0712
+			transform: rotate(-10deg)
+			.advantages-svg
+				width: 110px
+		&_second
+			background: #e64426
+			transform: rotate(15deg)
+			margin-left: 10px
+			.advantages-svg
+				width: 110px
+		&_third
+			background: #e1c62b
+			transform: rotate(-10deg)
+			margin-left: 15px
+			.advantages-svg
+				width: 95px
+		&_fourth
+			background: #128d15
+			transform: rotate(15deg)
+			margin-left: 25px
+			.advantages-svg
+				width: 80px
+		&_fifth
+			background: #38b5fc
+			transform: rotate(-10deg)
+			margin-left: 33px
+			.advantages-svg
+				width: 110px
 @import "media" // Всегда в конце
