@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Veselka</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=480, maximum-scale=1.0"/>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	@import "header.html"
+	<main class="main">
+		<section class="services registration">
+			<div class="services-overlay"></div>
+			<div class="container">
+				<h2 class="first-title title">
+						<span class="title-row">
+							<span class="title-span proxi_light">Р</span>
+							<span class="title-span lumberjack">е</span>
+							<span class="title-span proxi_light">єстра</span>
+							<span class="title-span new-roman">ц</span>
+							<span class="title-span proxi_light">ія</span>
+						</span>
+				</h2>
+				<div class="registration-content">
+					<div class="registration-item registration-item_left">
+						<h4 class="registration-item-title">Анкета для вступу в садочок</h4>
+						<p class="registration-item-text">Просимо заповнити реєстраційну онлайн-анкету, щоб збільшити шанс Вашої дитини потрапити до нашого дошкільного центру. Адміністратор зв’яжеться з вами впродовж 5 робочих днів.</p>
+						<form action="" class="registration-form">
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я та прізвище матері:</p>
+									<input type="text" class="registration-input" placeholder="Ім’я Прізвище Матері" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я та прізвище батька:</p>
+									<input type="text" class="registration-input" placeholder="Ім’я Прізвище Батька" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я Дитини" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Дата народження:</p>
+									<div class="registration-row-container registration-row-container_date">
+										<input type="text" class="registration-input registration-input_custom" placeholder="дд/мм/гг" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Контактний телефон:</p>
+									<div class="registration-row-container registration-row-container_phone">
+										<input type="text" class="registration-input registration-input_custom" placeholder="введіть номер" required>
+									</div>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Електронна пошта:</p>
+									<div class="registration-row-container registration-row-container_mail">
+										<input type="email" class="registration-input registration-input_custom" placeholder="введіть email" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Коментарі:</p>
+									<textarea class="registration-textarea" placeholder="Введіть коментар..."></textarea>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Чи відвідували ви дошкільний заклад?</p>
+									<div class="registration-row-flex">
+										<label class="registration-row-label label">
+											<input type="radio" name="visit" class="label-checkbox" checked>
+											<span class="label-span"></span>
+											<span class="label-text">Так</span>
+										</label>
+										<label class="registration-row-label label">
+											<input type="radio" name="visit" class="label-checkbox">
+											<span class="label-span"></span>
+											<span class="label-text">Ні</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Якщо так, назва закладу:</p>
+									<input type="email" class="registration-input" placeholder="Введіть назву закладу">
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title gistration-row-item">
+									<p class="registration-row-title registration-row-title_big">Коли бажаєте почати навчання?</p>
+									<div class="registration-row-container registration-row-container_date">
+										<input type="text" class="registration-input registration-input_custom" placeholder="вкажіть дату" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Що бажаєте відвідувати?</p>
+									<div class="registration-row-flex">
+										<label class="registration-row-label label label_big">
+											<input type="radio" name="visit2" class="label-checkbox" checked>
+											<span class="label-span"></span>
+											<span class="label-text">Садочок повного дня</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="radio" name="visit2" class="label-checkbox">
+											<span class="label-span"></span>
+											<span class="label-text">Міні сад (9:00- 13:00)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Заняття:</p>
+									<div class="registration-row-flex">
+										<label class="registration-row-label label label_big label_check">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">англійська мова</span>
+										</label>
+										<label class="registration-row-label label label_big label_check">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">2 роки до школи</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">рік до школи</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">танцювальна студія</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="registration-btn">Відправити</button>
+						</form>
+					</div>
+					<div class="registration-item registration-item_right">
+						<h4 class="registration-item-title">Екскурсія до Veselka</h4>
+						<p class="registration-item-text">Якщо Ви бажаєте відвідати наш дошкільний освітній центр, заповніть, будь ласка, форму реєстрації. Екскурсії проводяться щосереди у другу половину дня.</p>
+						<form action="" class="registration-form">
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Прізвище:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Прізвище" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">По-батькові:</p>
+									<input type="text" class="registration-input" placeholder="Введіть По-батькові" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Контактний телефон:</p>
+									<div class="registration-row-container registration-row-container_phone">
+										<input type="text" class="registration-input registration-input_custom" placeholder="введіть номер" required>
+									</div>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Електронна пошта:</p>
+									<div class="registration-row-container registration-row-container_mail">
+										<input type="email" class="registration-input registration-input_custom" placeholder="введіть email" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я Дитини" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Вік дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть вік дитини" required>
+								</div>
+							</div>
+							<button type="submit" class="registration-btn">Відправити</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@import "footer_white.html"
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

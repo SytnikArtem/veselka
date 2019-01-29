@@ -48,4 +48,12 @@ $(document).ready(function () {
             "close"],
         infobar: false
     });
+    //Слайдер на view-events
+    $('.events-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: true
+    });
 });

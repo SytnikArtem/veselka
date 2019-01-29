@@ -11,27 +11,43 @@
 		box-sizing: border-box
 
 *::-webkit-input-placeholder
-	color: #d4dae1
+	color: #3f3f3f
 	opacity: 1
+	transition: opacity .3s ease
 
 *:-moz-placeholder
-	color: #d4dae1
+	color: #3f3f3f
 	opacity: 1
+	transition: opacity .3s ease
 
 *::-moz-placeholder
-	color: #d4dae1
+	color: #3f3f3f
 	opacity: 1
+	transition: opacity .3s ease
 
 *:-ms-input-placeholder
-	color: #d4dae1
+	color: #3f3f3f
 	opacity: 1
+	transition: opacity .3s ease
+
+*:focus::-webkit-input-placeholder
+	opacity: 0
+
+*:focus::-moz-placeholder
+	opacity: 0
+
+*:focus:-moz-placeholder
+	opacity: 0
+
+*:focus:-ms-input-placeholder
+	opacity: 0
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #d4dae1
+	color: #3f3f3f
 body input:required:valid,
 body textarea:required:valid
-	color: #d4dae1
+	color: #3f3f3f
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
 	margin: 0
@@ -202,14 +218,71 @@ img
 		align-items: center
 		justify-content: flex-start
 		&-item
-			margin-right: 40px
+			margin-right: 28px
+			position: relative
+			overflow: hidden
+			padding: 0 5px
 			&:last-child
 				margin-right: 0
+			&:hover, &.active
+				.header-list-link
+					color: #ffffff
+				.header-list-overlay
+					transform: translateX(0)
+		&-overlay
+			position: absolute
+			height: 100%
+			width: calc(100% - 20px)
+			left: 10px
+			z-index: -1
+			transform: translateX(-150%)
+			transition: transform .2s ease
+			&:before
+				content: ''
+				position: absolute
+				width: 6px
+				height: 100%
+				top: 0
+				left: -5px
+				background: red
+				transform: skew(-5deg)
+			&:after
+				content: ''
+				position: absolute
+				width: 6px
+				height: 100%
+				top: 0
+				right: -5px
+				background: red
+				transform: skew(-5deg)
+			&_first
+				background: #bf0712
+				&:before, &:after
+					background: #bf0712
+			&_second
+				background: #e44530
+				&:before, &:after
+					background: #e44530
+			&_third
+				background: #e0c53d
+				&:before, &:after
+					background: #e0c53d
+			&_fourth
+				background: #128d15
+				&:before, &:after
+					background: #128d15
+			&_fifth
+				background: #41b6f9
+				&:before, &:after
+					background: #41b6f9
 		&-link
 			color: #5d5d5c
 			font-family: "ProximaNovaBold"
 			font-size: 18px
 			text-decoration: none
+			transition: color .5s ease
+
+
 .first
 	padding: 50px 0 700px
 	position: relative
@@ -432,9 +505,13 @@ img
 		margin-left: -20px
 		&-item
 			padding-top: 20px
+			&:hover
+				.third-slider-block
+					transform: rotate(0)
 		.slick-track
 			padding: 0 20px
 		&-block
+			transition: transform .2s ease
 			img
 				object-fit: cover
 				width: 100%
@@ -469,6 +546,10 @@ img
 				background: #e1c62b
 			&_green
 				background: #50cc52
+			&_red
+				background: #ea4548
+			&_fiolet
+				background: #7056df
 		&-more
 			color: rgba(0, 0, 0, 0.51)
 			font-family: "ProximaNovaBold"
@@ -530,6 +611,23 @@ img
 .footer
 	position: relative
 	padding: 75px 0 60px
+	&_white
+		.footer-left-text
+			color: #757575
+		.footer-title, .footer-right-link
+			color: #9e9e9e
+		.footer-link, .footer-right-text
+			color: #3f3f3f
+		.footer-right-link:before
+			background-color: #9e9e9e
+		.footer-lang-item
+			color: #3f3f3f
+			background-color: #efefef
+			&:hover
+				background-color: rgba(241, 241, 241, 0.5)
+		.footer-lang-item.active
+			color: #a3a3a3
+			background-color: rgba(241, 241, 241, 0.5)
 	&-overlay
 		width: 100%
 		height: 100%
@@ -682,7 +780,7 @@ img
 		width: 545px
 		margin-top: -10px
 .advantages
-	padding: 25px 0 50px
+	padding: 25px 0 0
 	&-contant
 		position: relative
 	&-img
@@ -695,12 +793,29 @@ img
 		align-items: flex-start
 		justify-content: space-between
 		margin-top: 105px
+		padding-bottom: 70px
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
 	&-item
 		width: 20%
 		cursor: pointer
+		position: relative
 		&:hover
 			.advantages-block
 				transform: rotate(0)
+		&_second
+			left: 10px
+		&_third
+			left: 15px
+		&_fourth
+			left: 25px
+		&_fifth
+			left: 33px
+		&-text
+			color: #3f3f3f
+			font-size: 16px
+			line-height: 24px
+			margin-top: 10px
+			padding-right: 30px
 	&-block
 		display: flex
 		align-items: center
@@ -716,25 +831,629 @@ img
 		&_second
 			background: #e64426
 			transform: rotate(15deg)
-			margin-left: 10px
 			.advantages-svg
 				width: 110px
 		&_third
 			background: #e1c62b
 			transform: rotate(-10deg)
-			margin-left: 15px
 			.advantages-svg
 				width: 95px
 		&_fourth
 			background: #128d15
 			transform: rotate(15deg)
-			margin-left: 25px
 			.advantages-svg
 				width: 80px
 		&_fifth
 			background: #38b5fc
 			transform: rotate(-10deg)
-			margin-left: 33px
 			.advantages-svg
 				width: 110px
+	&-item
+		font-size: 0
+		&-title
+			display: inline-block
+			padding: 5px 10px 5px 10px
+			position: relative
+			color: #ffffff
+			z-index: 2
+			&_bottom
+				top: -10px
+		&-span
+			font-size: 24px
+			line-height: 24px
+		&-overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			z-index: -1
+			&:after
+				content: ''
+				position: absolute
+				width: 10px
+				height: 100%
+				top: 0
+				right: -5px
+				transform: skew(-7deg)
+			&_fiolet
+				background: #7056df
+				&:after
+					background: #7056df
+			&_green
+				background: #128d15
+				&:after
+					background: #128d15
+			&_blue
+				background: #38b5fc
+				&:after
+					background: #38b5fc
+			&_red
+				background: #e64426
+				&:after
+					background: #e64426
+			&_yellow
+				background: #e1c62b
+				&:after
+					background: #e1c62b
+			&_bottom
+				z-index: -2
+				&:after
+					transform: skew(7deg)
+.events
+	padding: 85px 0 0
+	position: relative
+	&-overlay
+		position: absolute
+		width: 100%
+		height: 36vw
+		left: 0
+		top: 0
+		background: url(../img/events-bg_pic.svg) no-repeat top center
+		background-size: cover
+	&-content
+		padding-bottom: 70px
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
+	&-top
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&-list
+		display: flex
+		flex-wrap: wrap
+		margin-top: 30px
+		.third-slider-item
+			position: relative
+			padding: 25px 0
+			&:nth-child(3n + 2)
+				left: 35px
+			&:nth-child(3n + 3)
+				left: 70px
+		.third-slider-block
+			box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+		.third-slider-title
+			color: #3f3f3f
+		.third-slider-span
+			color: #ffffff
+	&-navigation
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 45px
+	&-btn
+		width: 40px
+		height: 40px
+		background-color: #efefef
+		color: #3f3f3f
+		font-family: "ProximaNovaBold"
+		font-size: 15px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		margin: 0 1px
+		transition: all .5s ease
+		&_more
+			background: transparent
+			pointer-events: none
+			position: relative
+			top: -3px
+			width: 30px
+		&.active, &:hover
+			background: #2eb4ff
+			color: #ffffff
+	&-img
+		width: 260px
+		position: absolute
+		top: -28px
+		right: 157px
+		z-index: 2
+	&-left
+		width: 375px
+	&-date
+		position: relative
+		color: #ffffff
+		font-size: 24px
+		padding: 0 5px
+		top: 7px
+		left: 2px
+		margin-bottom: 40px
+		display: inline-block
+		&-overlay
+			width: 100%
+			height: 100%
+			background: #c10000
+			position: absolute
+			top: 0
+			left: 0
+			z-index: -1
+			&:before
+				content: ''
+				position: absolute
+				width: 5px
+				height: 100%
+				transform: skew(2deg)
+				background: #c10000
+				top: 0
+				left: -3px
+			&:after
+				content: ''
+				position: absolute
+				width: 5px
+				height: 100%
+				transform: skew(-5deg)
+				background: #c10000
+				top: 0
+				right: -3px
+	&-title
+		color: #3f3f3f
+		font-family: "ProximaNovaExtrabold"
+		font-size: 60px
+		line-height: 59.78px
+	&-right
+		width: 700px
+		margin-right: -40px
+		margin-top: 5px
+	&-slider
+		&-item
+			padding-bottom: 70px
+		&-img
+			margin: 0 auto
+			box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+		.slick-dots li button:before
+			font-size: 5px
+		.slick-dots li, .slick-dots li button, .slick-dots li button:before
+			padding: 0
+			margin: 0
+			width: 10px
+			height: 10px
+			display: flex
+			align-items: center
+			justify-content: center
+		.slick-dots
+			display: flex
+			align-items: center
+			justify-content: center
+		.slick-dots li button:before
+			color: rgba(63, 63, 63, 0.51)
+			opacity: 1
+		.slick-dots li.slick-active button:before
+			color: #ea4548
+		.slick-dots
+			bottom: 27px
+			width: auto
+			left: 50%
+			transform: translateX(-50%)
+		.slick-next, .slick-prev
+			width: 40px
+			height: 22px
+			transition: all .5s ease
+			transform: translate(0)
+			top: 92%
+			z-index: 2
+		.slick-next:before, .slick-prev:before
+			content: ''
+			width: 40px
+			height: 22px
+			display: block
+			opacity: 1
+		.slick-next:before
+			background: url(../img/arrow-next.svg) no-repeat center
+			background-size: contain
+		.slick-prev:before
+			background: url(../img/arrow-next.svg) no-repeat center
+			background-size: contain
+			transform: rotate(180deg)
+		.slick-next
+			right: 60px
+			&:hover
+				transform: translateX(5px)
+		.slick-prev
+			left: 60px
+			&:hover
+				transform: translateX(-5px)
+	&-bottom
+		display: flex
+		justify-content: space-between
+		padding: 45px 0
+	&-info
+		width: 655px
+		padding-right: 110px
+		border-right: 1px solid #efefef
+		&-text
+			color: #666666
+			font-size: 16px
+			line-height: 24px
+		&-list
+			margin: 20px 0 20px
+		&-item
+			color: #666666
+			font-size: 16px
+			line-height: 24px
+			padding: 8px 0 8px 45px
+			position: relative
+			&:before
+				position: absolute
+				left: 0
+				top: 17px
+				width: 4px
+				height: 4px
+				background-color: #7056df
+				border-radius: 50%
+				content: ''
+	&-other
+		width: 515px
+		&-title
+			font-size: 0
+		&-span
+			font-size: 44px
+		&-list
+			margin-top: 40px
+		&-link
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			text-decoration: none
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+		&-img
+			width: 100px
+			flex-shrink: 0
+		&-block
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding-left: 35px
+		&-date
+			color: #ffffff
+			font-size: 16px
+			padding: 0 5px
+			background: #c10000
+		&-subtitle
+			color: #3f3f3f
+			font-family: "ProximaNovaExtrabold"
+			font-size: 32px
+			line-height: 35.87px
+			margin-top: 10px
+.services
+	padding: 85px 0 0
+	&-content
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
+		padding-bottom: 40px
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin-top: 60px
+	&-item
+		width: calc(33.33% - 20px)
+		margin-right: 30px
+		box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+		display: flex
+		flex-direction: column
+		margin-bottom: 30px
+		min-height: 610px
+		&:hover
+			.services-img
+				transform: scale(1.05)
+		&:nth-child(3n + 3)
+			margin-right: 0
+		&-block
+			height: 300px
+			font-size: 0
+			flex-shrink: 0
+			overflow: hidden
+		&-content
+			padding: 40px 40px 120px
+			position: relative
+			z-index: 2
+			height: 100%
+		&-title
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			font-size: 0
+			color: #ffffff
+			margin-top: -80px
+		&-span
+			font-size: 44px
+			line-height: 34px
+		&-svg
+			position: absolute
+			left: 0
+			top: 0
+			transform: translateY(-99%)
+			z-index: -1
+		&-text
+			color: #ffffff
+			font-size: 16px
+			line-height: 24px
+			margin-top: 23px
+		&-btn
+			color: #ffffff
+			font-family: "ProximaNovaBold"
+			font-size: 18px
+			background-color: #3f3f3f
+			display: inline-block
+			padding: 12px 20px
+			text-decoration: none
+			transition: background-color .5s ease
+			position: absolute
+			left: 40px
+			bottom: 40px
+			&:hover
+				background-color: lighten(#3f3f3f, 10%)
+		&_yellow
+			background: #e1c62b
+			.services-item-path
+				fill: #e1c62b
+		&_blue
+			background: #76c8eb
+			.services-item-path
+				fill: #76c8eb
+		&_red
+			background: #e86b55
+			.services-item-path
+				fill: #e86b55
+		&_darkred
+			background: #ea4548
+			.services-item-path
+				fill: #ea4548
+		&_darkblue
+			background: #5257e1
+			.services-item-path
+				fill: #5257e1
+		&_fiolet
+			background: #7056df
+			.services-item-path
+				fill: #7056df
+		&_green
+			background: #50cc52
+			.services-item-path
+				fill: #50cc52
+	&-img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		transition: transform .2s ease
+.gallery
+	&-filter
+		display: flex
+		align-items: center
+		justify-content: center
+		&-item
+			color: #3f3f3f
+			font-family: "ProximaNovaBold"
+			font-size: 15px
+			background-color: #efefef
+			margin-right: 1px
+			text-decoration: none
+			padding: 12px 16px
+			transition: all .5s ease
+			&.active, &:hover
+				color: #ffffff
+				background-color: #76c8eb
+	&-list
+		display: flex
+		flex-wrap: wrap
+		margin-top: 75px
+	&-img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		transition: transform .2s ease
+	&-item
+		width: calc(33.33% - 20px)
+		margin-right: 30px
+		height: 300px
+		overflow: hidden
+		margin-bottom: 30px
+		box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+		&:nth-child(3n + 3)
+			margin-right: 0
+		&:hover
+			.gallery-img
+				transform: scale(1.05)
+	&-content
+		padding-bottom: 65px
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
+.fancybox-button
+	background: #959595
+	border-radius: 50%
+	padding: 8px!important
+	width: 50px!important
+	height: 50px!important
+	svg path
+		fill: #2a2a2a
+.fancybox-navigation .fancybox-button--arrow_left
+	margin-left: 55px
+.fancybox-navigation .fancybox-button--arrow_right
+	margin-right: 55px
+.fancybox-button--close
+	border-radius: 50%
+	width: 30px!important
+	height: 30px!important
+	padding: 8px
+	top: 60px
+	right: 60px
+.registration
+	&-content
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 55px 0 70px
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
+	&-item
+		width: calc(50% - 15px)
+		padding: 55px 60px 60px
+		&_left
+			margin-right: 30px
+			background: #e86b55
+		&_right
+			background: #76c8eb
+		&-title
+			color: #ffffff
+			font-family: "ProximaNovaExtrabold"
+			font-size: 32px
+			line-height: 35.87px
+		&-text
+			color: #ffffff
+			font-family: "ProximaNova"
+			font-size: 16px
+			line-height: 24px
+			margin-top: 10px
+	&-row
+		display: flex
+		justify-content: space-between
+		margin-bottom: 33px
+		&-item
+			width: 235px
+			&_fluid
+				width: 100%
+		&-title
+			color: #ffffff
+			font-family: "ProximaNovaBold"
+			font-size: 16px
+			margin-bottom: 15px
+			&_big
+				width: calc(100% + 10px)
+		&-container
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 50px
+				height: 30px
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				border-right: 1px solid #e6e6e6
+				z-index: 2
+			&_phone
+				&:before
+					background: url(../img/phone.svg) no-repeat center
+					background-size: 17px 17px
+			&_date
+				&:before
+					background: url(../img/calendar.svg) no-repeat center
+					background-size: 16px 16px
+			&_mail
+				&:before
+					background: url(../img/mail.svg) no-repeat center
+					background-size: 16px 13px
+		&-flex
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			flex-wrap: wrap
+	&-input
+		background: #ffffff
+		outline: none
+		border: none
+		border-radius: 0
+		color: #3f3f3f
+		font-size: 16px
+		padding: 14px 15px
+		width: 100%
+		position: relative
+		&_custom
+			padding-left: 65px
+	&-form
+		margin-top: 40px
+	&-textarea
+		padding: 14px 15px
+		resize: none
+		color: #3f3f3f
+		font-size: 16px
+		font-family: "ProximaNova"
+		width: 100%
+		height: 130px
+		border: none
+		outline: none
+		background: #ffffff
+		border-radius: none
+	&-btn
+		outline: none
+		border: none
+		border-radius: 0
+		color: #ffffff
+		font-family: "ProximaNovaBold"
+		font-size: 18px
+		background-color: #3f3f3f
+		display: inline-block
+		padding: 12px 27px
+		text-decoration: none
+		transition: background-color .5s ease
+		cursor: pointer
+		margin-top: 25px
+		&:hover
+			background-color: #595959
+.label
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	position: relative
+	margin-right: 40px
+	&_big
+		margin-right: 0
+		width: 240px
+		padding-right: 20px
+	&_check
+		margin-bottom: 12px
+	&-checkbox
+		position: absolute
+		opacity: 0
+		&:checked ~ .label-span:before
+			opacity: 1
+	&-span
+		width: 16px
+		height: 16px
+		border-radius: 8px
+		background-color: #ffffff
+		position: relative
+		&:before
+			position: absolute
+			width: 8px
+			height: 8px
+			background-color: #2eb4ff
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			content: ''
+			opacity: 0
+		&_check
+			border-radius: 0
+			&:before
+				width: 100%
+				height: 100%
+				border-radius: 0
+				background: #2eb4ff url(../img/chacked.svg) no-repeat center
+				background-size: 10px 8px
+	&-text
+		color: #ffffff
+		font-size: 16px
+		margin-left: 18px
+
 @import "media" // Всегда в конце
