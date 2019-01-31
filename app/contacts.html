@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="custom_footer">
 	<!-- header.html -->
 <header class="header">
 	<div class="container">
@@ -73,78 +73,29 @@
 	</div>
 </header>
 	<main class="main">
-		<section class="events">
-			<div class="events-overlay"></div>
+		<section class="contacts">
+			<div class="contacts-overlay"></div>
 			<div class="container">
-				<div class="events-content">
-					<div class="events-top">
-						<div class="events-left">
-						<span class="events-date">
-							<span class="events-date-overlay"></span>
-							14.11.2017
+				<div class="contacts-content">
+					<h2 class="first-title title">
+						<span class="title-row">
+							<span class="title-span introscript">К</span>
+							<span class="title-span proxi_light">онта</span>
+							<span class="title-span introscript">к</span>
+							<span class="title-span proxi_light">т</span>
+							<span class="title-span introscript">и</span>
 						</span>
-							<h2 class="events-title">Карате в Міжнародній Інноваційній школі</h2>
-						</div>
-						<div class="events-right">
-							<div class="events-slider">
-								<div class="events-slider-item">
-									<img src="img/event1.jpg" alt="" class="events-slider-img">
-								</div>
-								<div class="events-slider-item">
-									<img src="img/event1.jpg" alt="" class="events-slider-img">
-								</div>
-								<div class="events-slider-item">
-									<img src="img/event1.jpg" alt="" class="events-slider-img">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="events-bottom">
-						<div class="events-info">
-							<p class="events-info-text">Заняття з дитячого карате це:</p>
-							<ul class="events-info-list">
-								<li class="events-info-item">Розвиток тілесних і фізичних навичок у дітей.</li>
-								<li class="events-info-item">Підвищення гнучкості  та  рухливості. Вміння володіти навичками контролю м’язового апарату, діти навчаються розслабляти чи напружувати м’язи тоді коли це необхідно.</li>
-								<li class="events-info-item">Тренування координації рухів. За допомогою спеціальних вправ, проходить корегування розвитку опорно-рухового апарату (якщо це є необхідним).</li>
-								<li class="events-info-item">Загально фізичне зміцнення організму.</li>
-								<li class="events-info-item">Психологічна підготовка та удосконалення навиків направлення енергії у потрібному напрямку.</li>
-							</ul>
-							<p class="events-info-text">У процесі регулярних занять з карате, сором’язлива дитина, стає більш впевнена в собі і у своїх силах, стає більш цілеспрямованою, яка володіє базовими навичками самоконтролю (фізичного та психологічного).</p>
-						</div>
-						<div class="events-other">
-							<h4 class="events-other-title">
-								<span class="events-other-span proxi_light">Останні по</span>
-								<span class="events-other-span lumberjack">д</span>
-								<span class="events-other-span proxi_light">ії</span>
-							</h4>
-							<div class="events-other-list">
-								<a href="" class="events-other-link">
-									<img src="img/other1.jpg" alt="" class="events-other-img">
-									<span class="events-other-block">
-										<span class="events-other-date">14.11.2017</span>
-										<span class="events-other-subtitle">Підвищення кваліфікації педагогів</span>
-									</span>
-								</a>
-								<a href="" class="events-other-link">
-									<img src="img/other2.jpg" alt="" class="events-other-img">
-									<span class="events-other-block">
-										<span class="events-other-date">14.11.2017</span>
-										<span class="events-other-subtitle">Корисна екскурсія у світ Стоматології</span>
-									</span>
-								</a>
-								<a href="" class="events-other-link">
-									<img src="img/other3.jpg" alt="" class="events-other-img">
-									<span class="events-other-block">
-										<span class="events-other-date">14.11.2017</span>
-										<span class="events-other-subtitle">Благодійний ярмарок</span>
-									</span>
-								</a>
-							</div>
-						</div>
+					</h2>
+					<div class="contacts-info">
+						<p class="contacts-item contacts-item_location">М. Фастів вул. А. Саєнка 1а.</p>
+						<a href="tel:+380674024477" class="contacts-item contacts-item_phone">+3 8067 402-44-77</a>
+						<a href="tel:+380674024477" class="contacts-item contacts-item_phone">+3 8067 402-44-77</a>
+						<a href="mailto:info@happynest.com.ua" class="contacts-item contacts-item_mail">info@happynest.com.ua</a>
 					</div>
 				</div>
 			</div>
 		</section>
+		<div class="contacts-map" id="map"></div>
 	</main>
 	<footer class="footer footer_white">
     <div class="container">
@@ -206,6 +157,8 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlAd-i0lx9TWfwCnbhqTsglGrCBpNHW5k"></script>
+    <script src="js/map.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

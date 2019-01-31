@@ -130,7 +130,7 @@ img
 .title
 	&-span
 		font-size: 60px
-		line-height: 57px
+		line-height: 0.95
 	&-row
 		&-bg
 			display: inline-block
@@ -151,12 +151,13 @@ img
 .subtitle
 	&-span
 		font-size: 64px
-		line-height: 54px
+		line-height: 0.84
 	&-bg
 		position: relative
 		display: inline-block
 		color: #ffffff
 		padding: 0 5px 5px 5px
+		overflow: hidden
 	&-overlay
 		position: absolute
 		width: 100%
@@ -170,7 +171,38 @@ img
 .header
 	padding-top: 50px
 	position: relative
-	z-index: 3
+	z-index: 5
+	&-btn-menu
+		width: 46px
+		height: 46px
+		background-color: #50cc52
+		position: relative
+		transition: background-color .5s ease
+		display: none
+		&.active
+			background: transparent
+			.header-line
+				background: #e86b55
+				&_center
+					opacity: 0
+				&_top
+					transform: translateY(5px) rotate(225deg)
+				&_bottom
+					transform: translateY(-5px) rotate(-225deg)
+	&-line
+		width: 16px
+		height: 2px
+		display: block
+		background: #ffffff
+		position: absolute
+		left: calc(50% - 8px)
+		transition: all .5s ease
+		&_top
+			top: 17px
+		&_center
+			top: calc(50% - 1px)
+		&_bottom
+			bottom: 17px
 	&-content
 		display: flex
 		align-items: center
@@ -229,6 +261,31 @@ img
 					color: #ffffff
 				.header-list-overlay
 					transform: translateX(0)
+			&:first-child
+				.header-list-overlay
+					background: #bf0712
+					&:before, &:after
+						background: #bf0712
+			&:nth-child(2)
+				.header-list-overlay
+					background: #e44530
+					&:before, &:after
+						background: #e44530
+			&:nth-child(3)
+				.header-list-overlay
+					background: #e0c53d
+					&:before, &:after
+						background: #e0c53d
+			&:nth-child(4)
+				.header-list-overlay
+					background: #128d15
+					&:before, &:after
+						background: #128d15
+			&:nth-child(5)
+				.header-list-overlay
+					background: #41b6f9
+					&:before, &:after
+						background: #41b6f9
 		&-overlay
 			position: absolute
 			height: 100%
@@ -244,7 +301,6 @@ img
 				height: 100%
 				top: 0
 				left: -5px
-				background: red
 				transform: skew(-5deg)
 			&:after
 				content: ''
@@ -253,35 +309,13 @@ img
 				height: 100%
 				top: 0
 				right: -5px
-				background: red
 				transform: skew(-5deg)
-			&_first
-				background: #bf0712
-				&:before, &:after
-					background: #bf0712
-			&_second
-				background: #e44530
-				&:before, &:after
-					background: #e44530
-			&_third
-				background: #e0c53d
-				&:before, &:after
-					background: #e0c53d
-			&_fourth
-				background: #128d15
-				&:before, &:after
-					background: #128d15
-			&_fifth
-				background: #41b6f9
-				&:before, &:after
-					background: #41b6f9
 		&-link
 			color: #5d5d5c
 			font-family: "ProximaNovaBold"
 			font-size: 18px
 			text-decoration: none
 			transition: color .5s ease
-
 
 .first
 	padding: 50px 0 700px
@@ -293,24 +327,60 @@ img
 		top: 190px
 		left: 0
 		pointer-events: none
-		background: url('../img/bg1.jpg') no-repeat center
-		background-size: cover
+
+		&_center
+			background: url('../img/bg1.jpg') no-repeat center
+			background-size: cover
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
 	&-overlay
 		width: 100%
 		height: auto
 		position: absolute
 		left: 0
+		&-svg
+			width: 2560px
+			position: relative
+			left: 50%
+			transform: translateX(-50%)
+			top: 0
+			&_top
+				left: calc(50% - 4px)
+
+
+			//height: 100%
 		&_top
 			height: 44vw
-			background: url(../img/top.svg) no-repeat center
-			background-size: cover
+			//background: url(../img/top.svg) no-repeat center
+			//background-size: cover
+			//top: -450px
+			//height: 500px
 			top: -17vw
 			z-index: 2
+			&__item
+				background: url(../img/item-top_bgpic.svg) no-repeat center
+				background-size: cover
+			&-bg
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				right: 0
+				background: #ffffff
+				z-index: 1
 		&_bottom
-			bottom: -25px
-			height: 26vw
-			background: url(../img/bottom.svg) no-repeat center
-			background-size: cover
+			bottom: -15px
+			//height: 26vw
+			//background: url(../img/bottom.svg) no-repeat center
+			//background-size: cover
+			&__item
+				background: url(../img/item-bottom_bgpic.svg) no-repeat center
+				background-size: cover
+				bottom: -65px
+				height: 30vw
 	&-content
 		display: flex
 		align-items: flex-start
@@ -355,6 +425,45 @@ img
 	&-right
 		width: 645px
 		margin: 0 45px
+		position: relative
+		height: 265px
+		&-img
+			position: absolute
+			&_first
+				width: 89px
+				height: 67px
+				top: 195px
+				left: 0
+			&_second
+				width: 32px
+				height: 25px
+				top: 203px
+				left: 106px
+			&_third
+				width: 193px
+				height: 212px
+				top: 0
+				left: 62px
+			&_fourth
+				width: 100px
+				height: 120px
+				left: 253px
+				top: 32px
+			&_fifth
+				width: 113px
+				height: 88px
+				left: 363px
+				top: 37px
+			&_sixth
+				width: 86px
+				height: 52px
+				right: 62px
+				top: 50px
+			&_seventh
+				width: 29px
+				height: 31px
+				right: 3px
+				top: 50px
 	&-title
 		color: #3f3f3f
 		display: flex
@@ -406,6 +515,8 @@ img
 			z-index: 3
 			border-radius: 50%
 			overflow: hidden
+			width: 400px
+			height: 400px
 		&-overlay
 			position: absolute
 			width: 100%
@@ -477,17 +588,24 @@ img
 .third
 	padding: 110px 0 0
 	position: relative
-	background: #e86b55
+	//background: #e86b55
+	&-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: #e86b55
 	&-overlay
 		position: absolute
 		left: 0
 		top: 0
 		width: 100%
-		height: 33vw
-		background: url(../img/footter.svg), linear-gradient(to bottom, #ffffff 90%, #e86b55)
-		background-position: top center, top left
-		background-repeat: no-repeat
-		background-size: cover, cover
+		height: calc(100% - 100px)
+		//background: url(../img/footter.svg), linear-gradient(to bottom, #ffffff 90%, #e86b55)
+		//background-position: top center, top left
+		//background-repeat: no-repeat
+		//background-size: cover, cover
 	&-subtitle
 		font-size: 0
 		display: flex
@@ -512,33 +630,31 @@ img
 			padding: 0 20px
 		&-block
 			transition: transform .2s ease
+			width: 407px
+			height: 303px
 			img
 				object-fit: cover
 				width: 100%
 				height: 100%
 				//box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
 			&_first
-				width: 407px
-				height: 303px
 				transform: rotate(-5deg)
 			&_second
-				width: 407px
-				height: 300px
 				transform: rotate(3deg)
 				margin-left: -5px
 			&_third
-				width: 407px
-				height: 303px
 				transform: rotate(-6deg)
 				margin-left: -10px
 		&-span
 			position: relative
+			padding: 0 5px
+			left: -5px
 		&-overlay
-			width: calc(100% + 10px)
+			width: 100%
 			height: 100%
 			position: absolute
 			top: 0
-			left: -5px
+			left: 0
 			z-index: -1
 			&_blue
 				background: #76c8eb
@@ -566,7 +682,7 @@ img
 			font-family: "ProximaNovaExtrabold"
 			color: #ffffff
 			font-size: 32px
-			line-height: 35.87px
+			line-height: 1.125
 			position: relative
 			z-index: 2
 			&_first
@@ -608,6 +724,35 @@ img
 		top: -285px
 		right: 40px
 		width: 620px
+		height: 345px
+		z-index: 2
+		&-svg
+			position: absolute
+			&_first
+				width: 84px
+				height: 70px
+				left: 0
+				bottom: 0
+			&_second
+				width: 156px
+				height: 203px
+				left: 59px
+				top: 107px
+			&_third
+				width: 169px
+				height: 258px
+				left: 188px
+				top: 0
+			&_fourth
+				width: 138px
+				height: 187px
+				right: 98px
+				top: 60px
+			&_fifth
+				width: 81px
+				height: 121px
+				top: 140px
+				right: 0
 .footer
 	position: relative
 	padding: 75px 0 60px
@@ -744,14 +889,14 @@ img
 	position: relative
 	&-subtitle
 		letter-spacing: -1px
+		display: flex
+		align-items: center
 	&-overlay
 		width: 100%
 		height: 37vw
 		position: absolute
 		left: 0
-		top: 100px
-		background: url(../img/about-bg_pic.svg) no-repeat center
-		background-size: cover
+		top: 0
 		z-index: -1
 	&-center
 		display: flex
@@ -766,8 +911,40 @@ img
 		letter-spacing: -0.1px
 		margin-top: 35px
 	&-right
-		width: 580px
+		width: 570px
 		margin: 25px 20px 0 0
+		position: relative
+		height: 230px
+		&-img
+			position: absolute
+			width: 50px
+			&_mobile
+				display: none
+			&_first
+				width: 63px
+				height: 95px
+				left: 0
+				bottom: 0
+			&_second
+				width: 125px
+				height: 99px
+				left: 83px
+				top: 68px
+			&_third
+				width: 138px
+				height: 140px
+				left: 207px
+				top: 0
+			&_fourth
+				width: 70px
+				height: 90px
+				top: 38px
+				right: 127px
+			&_fifth
+				width: 99px
+				height: 62px
+				right: -10px
+				top: 54px
 	&-territory
 		display: flex
 		align-items: center
@@ -794,7 +971,6 @@ img
 		justify-content: space-between
 		margin-top: 105px
 		padding-bottom: 70px
-		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
 	&-item
 		width: 20%
 		cursor: pointer
@@ -852,10 +1028,11 @@ img
 		font-size: 0
 		&-title
 			display: inline-block
-			padding: 5px 10px 5px 10px
+			padding: 5px 13px 5px 10px
 			position: relative
 			color: #ffffff
 			z-index: 2
+			overflow: hidden
 			&_bottom
 				top: -10px
 		&-span
@@ -863,7 +1040,7 @@ img
 			line-height: 24px
 		&-overlay
 			position: absolute
-			width: 100%
+			width: calc(100% - 8px)
 			height: 100%
 			top: 0
 			left: 0
@@ -1138,6 +1315,7 @@ img
 			margin-top: 10px
 .services
 	padding: 85px 0 0
+	position: relative
 	&-content
 		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
 		padding-bottom: 40px
@@ -1237,6 +1415,17 @@ img
 		width: 100%
 		height: 100%
 		transition: transform .2s ease
+	&-left
+		width: 470px
+		margin-top: 25px
+		letter-spacing: -0.2px
+	&-text
+		color: #666666
+		font-size: 16px
+		line-height: 24px
+		margin-bottom: 22px
+		&:last-child
+			margin-bottom: 0
 .gallery
 	&-filter
 		display: flex
@@ -1455,5 +1644,160 @@ img
 		color: #ffffff
 		font-size: 16px
 		margin-left: 18px
+.contacts
+	padding: 85px 0 0
+	position: relative
+	z-index: 2
+	&-info
+		margin-top: 55px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	&-item
+		color: #3f3f3f
+		font-family: "ProximaNovaSemibold"
+		font-size: 15px
+		text-decoration: none
+		padding-left: 40px
+		margin: 8px 0
+		&_location
+			background: url(../img/pin.svg) no-repeat left center
+			background-size: 18px 20px
+		&_phone
+			background: url(../img/phone.svg) no-repeat left center
+			background-size: 16px 16px
+		&_mail
+			background: url(../img/mail2.svg) no-repeat left center
+			background-size: 16px 16px
+			position: relative
+			&:before
+				position: absolute
+				right: 0
+				bottom: 0
+				content: ''
+				width: calc(100% - 40px)
+				height: 1px
+				background: #3f3f3f
+	&-overlay
+		width: 100%
+		height: 38vw
+		position: absolute
+		left: 0
+		background: url(../img/contacts-pic.svg) no-repeat center
+		background-size: cover
+		top: -6vw
+		pointer-events: none
+	&-map
+		width: 100%
+		height: 37vw
+		margin-top: -200px
+		z-index: 1
+.custom_footer .footer
+	background: #f7f7f7
+.item
+	padding-bottom: 700px
+	&-content
+		position: relative
+		z-index: 2
+		border: none
+	&-bottom
+		margin-top: -170px
+		&-right
+			width: 545px
+		&-content
+			display: flex
+			justify-content: flex-end
+			padding-bottom: 145px
+			border-bottom: 1px solid rgba(63, 63, 63, 0.1)
 
+//.path1, .path2, .path11, .path22
+//	opacity: 0
+//	transition: opacity .5s ease
+//	overflow: hidden
+//	&.show
+//		opacity: 1
+.main
+	overflow: hidden
+	&_overflow
+		overflow: hidden
+.gsapFade
+	opacity: 0
+.animate-svg2
+	background: #ffffff
+svg
+	overflow: hidden
+.animate-svg3
+	position: absolute
+	z-index: 2
+	bottom: -3px
+.gsapSvg
+	display: block
+.first-right-img_mobile
+	display: none
+.footer-left-logo_mobile, .third-img-svg_mobile, .footer-mobile, .footer-bottom-mobile, .header-right-info
+	display: none
+.teacher
+	&-list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-top: 80px
+	&-item
+		width: calc(33.33% - 20px)
+		box-shadow: 0 47px 43px rgba(0, 0, 0, 0.1)
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		&_blue
+			background: #76c8eb
+			.services-item-svg
+				fill: #76c8eb
+		&_yellow
+			background: #e1c62b
+			.services-item-svg
+				fill: #e1c62b
+		&_green
+			background: #50cc52
+			.services-item-svg
+				fill: #50cc52
+		&_darkred
+			background: #ea4548
+			.services-item-svg
+				fill: #ea4548
+		&_fiolet
+			background: #705bdc
+			.services-item-svg
+				fill: #705bdc
+		&_red
+			background: #e66a54
+			.services-item-svg
+				fill: #e66a54
+	&-block
+		height: 450px
+	&-img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&-main
+		position: relative
+		padding: 0 40px 40px
+		z-index: 2
+		color: #ffffff
+	&-subtitle
+		font-family: "ProximaNovaBold"
+		font-size: 32px
+		line-height: 27.9px
+		width: 70%
+		margin-top: -50px
+	&-info
+		font-family: "ProximaNovaBold"
+		font-size: 18px
+		margin-top: 22px
+	&-text
+		font-size: 16px
+		line-height: 24px
+		margin-top: 25px
+	&-content
+		border-bottom: 1px solid rgba(63, 63, 63, 0.1)
+		padding-bottom: 40px
 @import "media" // Всегда в конце
