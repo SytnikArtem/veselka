@@ -8,12 +8,23 @@ var markersData = [
   }
 ];
 // координаты центров городов
-var centerMaps = [
-  {
-    latX: 50.079727,
-    latY: 29.753844
-  }
-]
+if ($(window).width() > 1024) {
+  var centerMaps = [
+    {
+      latX: 50.079727,
+      latY: 29.753844
+    }
+  ]
+}
+else {
+  var centerMaps = [
+    {
+      latX: 50.079727,
+      latY: 29.913844
+    }
+  ]
+}
+
 var map, map2, latLng, url, name, mark, marker, thisCenter;
 function initMap() {
   thisCenterX = centerMaps[0].latX;

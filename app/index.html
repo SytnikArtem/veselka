@@ -73,10 +73,195 @@
 	</div>
 </header>
 	<main class="main">
-		<section class="about">
-			<div class="about-overlay">
-				<div class="first-overlay_top-bg gsapWidthMinTop"></div>
-				<svg class="first-overlay-svg first-overlay-svg_about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 685.25">
+		<section class="services registration">
+			<div class="container">
+				<h2 class="first-title title">
+						<span class="title-row">
+							<span class="title-span proxi_light">Р</span>
+							<span class="title-span lumberjack">е</span>
+							<span class="title-span proxi_light">єстра</span>
+							<span class="title-span new-roman">ц</span>
+							<span class="title-span proxi_light">ія</span>
+						</span>
+				</h2>
+				<div class="registration-content">
+					<div class="registration-item registration-item_left">
+						<h4 class="registration-item-title">Анкета для вступу в садочок</h4>
+						<p class="registration-item-text">Просимо заповнити реєстраційну онлайн-анкету, щоб збільшити шанс Вашої дитини потрапити до нашого дошкільного центру. Адміністратор зв’яжеться з вами впродовж 5 робочих днів.</p>
+						<form action="" class="registration-form">
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я та прізвище матері:</p>
+									<input type="text" class="registration-input" placeholder="Ім’я Прізвище Матері" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я та прізвище батька:</p>
+									<input type="text" class="registration-input" placeholder="Ім’я Прізвище Батька" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я Дитини" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Дата народження:</p>
+									<div class="registration-row-container registration-row-container_date">
+										<input type="text" class="registration-input registration-input_custom" placeholder="дд/мм/гг" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Контактний телефон:</p>
+									<div class="registration-row-container registration-row-container_phone">
+										<input type="text" class="registration-input registration-input_custom" placeholder="введіть номер" required>
+									</div>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Електронна пошта:</p>
+									<div class="registration-row-container registration-row-container_mail">
+										<input type="email" class="registration-input registration-input_custom" placeholder="введіть email" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Коментарі:</p>
+									<textarea class="registration-textarea" placeholder="Введіть коментар..."></textarea>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Чи відвідували ви дошкільний заклад?</p>
+									<div class="registration-row-flex">
+										<label class="registration-row-label label">
+											<input type="radio" name="visit" class="label-checkbox" checked>
+											<span class="label-span"></span>
+											<span class="label-text">Так</span>
+										</label>
+										<label class="registration-row-label label">
+											<input type="radio" name="visit" class="label-checkbox">
+											<span class="label-span"></span>
+											<span class="label-text">Ні</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Якщо так, назва закладу:</p>
+									<input type="email" class="registration-input" placeholder="Введіть назву закладу">
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title gistration-row-item">
+									<p class="registration-row-title registration-row-title_big">Коли бажаєте почати навчання?</p>
+									<div class="registration-row-container registration-row-container_date">
+										<input type="text" class="registration-input registration-input_custom" placeholder="вкажіть дату" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Що бажаєте відвідувати?</p>
+									<div class="registration-row-flex registration-row-flex_custom">
+										<label class="registration-row-label label label_big">
+											<input type="radio" name="visit2" class="label-checkbox" checked>
+											<span class="label-span"></span>
+											<span class="label-text">Садочок повного дня</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="radio" name="visit2" class="label-checkbox">
+											<span class="label-span"></span>
+											<span class="label-text">Міні сад (9:00- 13:00)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item registration-row-item_fluid">
+									<p class="registration-row-title">Заняття:</p>
+									<div class="registration-row-flex">
+										<label class="registration-row-label label label_big label_check">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">англійська мова</span>
+										</label>
+										<label class="registration-row-label label label_big label_check">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">2 роки до школи</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">рік до школи</span>
+										</label>
+										<label class="registration-row-label label label_big">
+											<input type="checkbox" class="label-checkbox">
+											<span class="label-span label-span_check"></span>
+											<span class="label-text">танцювальна студія</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="registration-btn js-send">Відправити</button>
+						</form>
+					</div>
+					<div class="registration-item registration-item_right">
+						<h4 class="registration-item-title">Екскурсія до Veselka</h4>
+						<p class="registration-item-text">Якщо Ви бажаєте відвідати наш дошкільний освітній центр, заповніть, будь ласка, форму реєстрації. Екскурсії проводяться щосереди у другу половину дня.</p>
+						<form action="" class="registration-form">
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Прізвище:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Прізвище" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">По-батькові:</p>
+									<input type="text" class="registration-input" placeholder="Введіть По-батькові" required>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Контактний телефон:</p>
+									<div class="registration-row-container registration-row-container_phone">
+										<input type="text" class="registration-input registration-input_custom" placeholder="введіть номер" required>
+									</div>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Електронна пошта:</p>
+									<div class="registration-row-container registration-row-container_mail">
+										<input type="email" class="registration-input registration-input_custom" placeholder="введіть email" required>
+									</div>
+								</div>
+							</div>
+							<div class="registration-row">
+								<div class="registration-row-item">
+									<p class="registration-row-title">Ім'я дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть Ім’я Дитини" required>
+								</div>
+								<div class="registration-row-item">
+									<p class="registration-row-title">Вік дитини:</p>
+									<input type="text" class="registration-input" placeholder="Введіть вік дитини" required>
+								</div>
+							</div>
+							<button type="submit" class="registration-btn js-send">Відправити</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="registration-overlay">
+				<div class="first-overlay_top-bg gsapWidthMinTop" data-delay="2"></div>
+				<svg class="first-overlay-svg first-overlay-svg_reg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 685.25">
 					<defs>
 						<style>
 							.cls-1a {
@@ -100,258 +285,32 @@
 							}
 						</style>
 					</defs>
-					<path class="cls-1a" d="M1970.01,703.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676c-12.7-41.492-27.843-84.093-35.694-127.264C47.33,377.558,46.758,264,46,250c7.157,46.734,78.02,246.132,97,289,305.156,688.04,728.539,27.959,1020.31-116.423,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.086,4.18-2.043,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.247,802.247,0,0,1,1917.64,444.2q17.7,9.849,35.06,20.75c4.81,3.054,16.36,9.377,16.36,9.377Z" transform="translate(-49 -250)"/>
-					<path class="cls-2a" d="M1970.01,703.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676c-12-39.225-26.209-79.441-34.359-120.193-0.1-123.6-.423-212.059-1.1-224.483,7.157,46.733,66.769,219.852,80.507,264.675,13.75,44.756,31.638,88.128,55.356,127.383,23.731,39.144,53.724,73.912,89.677,99.351a266.3,266.3,0,0,0,57.435,31.066A288.519,288.519,0,0,0,393.77,851.9c43.035,6.193,87.368,3.48,130.8-5a567.02,567.02,0,0,0,64.542-16.7,655.2,655.2,0,0,0,62.318-23.46c40.5-17.7,78.555-40.206,115.975-65.9,37.427-25.642,74.531-54.226,113.147-82.627,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.244-40.53c41.56-26.269,84.62-50.537,128.59-72.853,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.086,4.18-2.043,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.247,802.247,0,0,1,1883.64,524.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242c4.94,3.592,15.72,11.06,15.72,11.06Z" transform="translate(-49 -250)"/>
-					<path class="cls-3a" d="M1904.99,648.191q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676,71.231,617.73,56.742,576.755,48.671,535.235c-0.171-28.449-.4-46.956-0.695-52.416A975.6,975.6,0,0,0,79.508,620.675c13.749,44.756,31.638,88.128,55.356,127.383,23.731,39.144,53.724,73.912,89.677,99.351a266.26,266.26,0,0,0,57.435,31.066A288.519,288.519,0,0,0,344.77,894.9c43.035,6.193,87.368,3.481,130.8-5a567.02,567.02,0,0,0,64.542-16.7,655.2,655.2,0,0,0,62.318-23.46c40.5-17.7,78.555-40.206,115.975-65.9,37.427-25.642,74.531-54.226,113.147-82.627,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.245-40.53c41.557-26.269,84.619-50.537,128.589-72.853,5.49-2.808,11.04-5.474,16.56-8.219l8.29-4.085,4.18-2.044,4.49-2.035,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.6,850.6,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.177,802.177,0,0,1,1834.64,567.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242a546.73,546.73,0,0,1,65.12,55.4v36.049A546.591,546.591,0,0,0,1904.99,648.191Z" transform="translate(-49 -250)"/>
-					<path class="cls-4a" d="M1970.01,704.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.926q-39,2.166-77.77,8.152a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.584-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-30.652,22.58-60.35,45.27-90.015,66.51C755.082,796.07,765.681,787.085,776,780c37.427-25.642,65.933-55.377,104.549-83.778,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.244-40.53c41.56-26.268,84.62-50.537,128.59-72.853,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.085,4.18-2.044,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.627,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.177,802.177,0,0,1,1883.64,562.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242c5.44,3.955,16.19,12.207,16.19,12.207Z" transform="translate(-49 -250)"/>
+					<path class="cls-1a" d="M1970.01,703.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676c-12.7-41.492-27.843-84.093-35.694-127.264C47.33,377.558,46.758,264,46,250c7.157,46.734,78.02,246.132,97,289,305.156,688.04,728.539,27.959,1020.31-116.423,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.086,4.18-2.043,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.247,802.247,0,0,1,1917.64,444.2q17.7,9.849,35.06,20.75c4.81,3.054,16.36,9.377,16.36,9.377Z" transform="translate(-49 -250)"></path>
+					<path class="cls-2a" d="M1970.01,703.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676c-12-39.225-26.209-79.441-34.359-120.193-0.1-123.6-.423-212.059-1.1-224.483,7.157,46.733,66.769,219.852,80.507,264.675,13.75,44.756,31.638,88.128,55.356,127.383,23.731,39.144,53.724,73.912,89.677,99.351a266.3,266.3,0,0,0,57.435,31.066A288.519,288.519,0,0,0,393.77,851.9c43.035,6.193,87.368,3.48,130.8-5a567.02,567.02,0,0,0,64.542-16.7,655.2,655.2,0,0,0,62.318-23.46c40.5-17.7,78.555-40.206,115.975-65.9,37.427-25.642,74.531-54.226,113.147-82.627,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.244-40.53c41.56-26.269,84.62-50.537,128.59-72.853,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.086,4.18-2.043,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.247,802.247,0,0,1,1883.64,524.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242c4.94,3.592,15.72,11.06,15.72,11.06Z" transform="translate(-49 -250)"></path>
+					<path class="cls-3a" d="M1904.99,648.191q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.925q-39,2.165-77.77,8.151a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.585-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-38.554,28.4-75.6,56.985-112.968,82.627-37.361,25.693-75.355,48.2-115.792,65.9a653.723,653.723,0,0,1-62.22,23.461,565.563,565.563,0,0,1-64.44,16.7c-43.36,8.477-87.624,11.189-130.591,5a287.7,287.7,0,0,1-62.7-16.427,265.757,265.757,0,0,1-57.344-31.066c-35.9-25.439-65.843-60.207-89.536-99.351C115.042,745.8,97.182,702.431,83.455,657.676,71.231,617.73,56.742,576.755,48.671,535.235c-0.171-28.449-.4-46.956-0.695-52.416A975.6,975.6,0,0,0,79.508,620.675c13.749,44.756,31.638,88.128,55.356,127.383,23.731,39.144,53.724,73.912,89.677,99.351a266.26,266.26,0,0,0,57.435,31.066A288.519,288.519,0,0,0,344.77,894.9c43.035,6.193,87.368,3.481,130.8-5a567.02,567.02,0,0,0,64.542-16.7,655.2,655.2,0,0,0,62.318-23.46c40.5-17.7,78.555-40.206,115.975-65.9,37.427-25.642,74.531-54.226,113.147-82.627,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.245-40.53c41.557-26.269,84.619-50.537,128.589-72.853,5.49-2.808,11.04-5.474,16.56-8.219l8.29-4.085,4.18-2.044,4.49-2.035,8.98-4.062,9.06-3.869c6.02-2.628,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.6,850.6,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.177,802.177,0,0,1,1834.64,567.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242a546.73,546.73,0,0,1,65.12,55.4v36.049A546.591,546.591,0,0,0,1904.99,648.191Z" transform="translate(-49 -250)"></path>
+					<path class="cls-4a" d="M1970.01,704.592a546.689,546.689,0,0,0-65.02-55.4q-16.86-12.257-34.17-23.242-17.325-10.926-35-20.75a800.478,800.478,0,0,0-146-62.352,876.605,876.605,0,0,0-152.5-33.741,847.874,847.874,0,0,0-155.71-5.926q-39,2.166-77.77,8.152a760.976,760.976,0,0,0-76.74,16.12,713.222,713.222,0,0,0-74.72,24.385c-6.09,2.443-12.21,4.8-18.22,7.426l-9.05,3.869-8.97,4.062-4.47,2.036-4.18,2.043-8.28,4.086c-5.51,2.744-11.05,5.41-16.53,8.218-43.9,22.316-86.9,46.584-128.387,72.853q-31.106,19.693-61.148,40.53c-19.983,13.882-39.577,28.055-58.835,42.262-30.652,22.58-60.35,45.27-90.015,66.51C755.082,796.07,765.681,787.085,776,780c37.427-25.642,65.933-55.377,104.549-83.778,19.287-14.207,38.913-28.38,58.927-42.262q30.063-20.792,61.244-40.53c41.56-26.268,84.62-50.537,128.59-72.853,5.49-2.808,11.04-5.474,16.56-8.218l8.29-4.085,4.18-2.044,4.49-2.036,8.98-4.062,9.06-3.869c6.02-2.627,12.15-4.983,18.25-7.426a715.287,715.287,0,0,1,74.84-24.385,763.251,763.251,0,0,1,76.86-16.12q38.76-5.946,77.9-8.152a850.515,850.515,0,0,1,155.95,5.926,879.22,879.22,0,0,1,152.74,33.741A802.177,802.177,0,0,1,1883.64,562.2q17.7,9.849,35.06,20.75,17.325,11,34.22,23.242c5.44,3.955,16.19,12.207,16.19,12.207Z" transform="translate(-49 -250)"></path>
 				</svg>
-			</div>
-			<div class="container">
-				<div class="about-center">
-					<div class="about-left">
-						<h4 class="about-subtitle gsapFade" data-duration="4">
-							<span class="subtitle-span proxi_light">Про</span>
-							<span class="subtitle-bg">
-								<span class="subtitle-overlay subtitle-overlay_blue gsapSlideInLeft" data-delay="1.5"></span>
-								<span class="subtitle-span new-roman">ц</span>
-								<span class="subtitle-span lumberjack">е</span>
-								<span class="subtitle-span proxi_light">нтр</span>
-							</span>
-						</h4>
-						<p class="about-text gsapFadeTop" data-duration="3" data-delay="1.5" data-height="30">Семейный центр «Радуга» - это детский садик в Фастове, рассчитанный на 30 детей, которые будут заниматься в 2-х группах. К каждой группе будут прикреплены 2 руководителя <span class="nowrap">и их помощники.</span> Это обеспечит каждого воспитанника максимальным вниманием со стороны преподавателей. Комплекс создан молодежной организацией «Час змін». Людьми, которые не только на словах, но и на деле доказывают важность семейных ценностей и делают все для их сохранения.</p>
-					</div>
-					<div class="about-right">
-						<img src="img/about-top_pic.svg" alt="" class="about-right-img about-right-img_mobile">
-						<img src="img/about1_pic.svg" alt="" class="about-right-img about-right-img_first gsapSvg" data-delay="2">
-						<img src="img/about2_pic.svg" alt="" class="about-right-img about-right-img_second gsapSvg" data-delay="2.2">
-						<img src="img/about3_pic.svg" alt="" class="about-right-img about-right-img_third gsapSvg" data-delay="2.4">
-						<img src="img/about4_pic.svg" alt="" class="about-right-img about-right-img_fourth gsapSvg" data-delay="2.6">
-						<img src="img/about5_pic.svg" alt="" class="about-right-img about-right-img_fifth gsapSvg" data-delay="2.8">
-					</div>
-				</div>
-				<div class="about-territory territory">
-					<div class="territory-left gsapUp" data-delay="1.5">
-						<img src="img/territory.jpg" alt="" class="territory-img">
-					</div>
-					<div class="territory-right">
-						<h4 class="about-subtitle gsapFade" data-duration="4" data-delay="2">
-							<span class="subtitle-span proxi_light">Т</span>
-							<span class="subtitle-span lumberjack">е</span>
-							<span class="subtitle-span proxi_light">риторія</span>
-						</h4>
-						<p class="about-text gsapFadeTop" data-duration="3" data-delay="2" data-height="30">Территория центра – это два этажа для занятий, игр, творчества и отдыха. На втором этаже здания расположены комнаты для занятий для каждой группы, раздевалка с личными шкафчиками для каждого малыша и два санузла – для мальчиков и для девочек. На третьем этаже мы оборудовали уютную спальню и просторный актовый зал. Здание комплекса находится под охраной и круглосуточным видеонаблюдением. Кроме того, на территории находятся две закрытых игровых площадки.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="advantages">
-			<div class="container">
-				<div class="advantages-content">
-					<h4 class="about-subtitle gsapFade" data-duration="4">
-						<span class="subtitle-span proxi_light">На</span>
-						<span class="subtitle-span new-roman">ш</span>
-						<span class="subtitle-span proxi_light">і</span>
-						<span class="subtitle-span proxi_light">&nbsp;п</span>
-						<span class="subtitle-span lumberjack">е</span>
-						<span class="subtitle-span proxi_light">р</span>
-						<span class="subtitle-span lumberjack">ев</span>
-						<span class="subtitle-span proxi_light">а</span>
-						<span class="subtitle-span lumberjack">г</span>
-						<span class="subtitle-span introscript">и</span>
-					</h4>
-					<img src="img/about-bottom_pic.svg" alt="" class="advantages-img">
-					<div class="advantages-list">
-						<div class="advantages-item advantages-item_first">
-							<div class="advantages-block advantages-block_first gsapUp" data-delay="0.5" data-duration="0.05">
-								<img src="img/1.svg" alt="" class="advantages-svg">
-							</div>
-							<p class="advantages-item-title advantages-item-title_fiolet gsapFadeTop" data-delay="0.5">
-								<span class="advantages-item-overlay advantages-item-overlay_fiolet gsapSlideInLeft" data-delay="1.2"></span>
-								<span class="advantages-item-span proxi_light">Зр</span>
-								<span class="advantages-item-span new-roman">уч</span>
-								<span class="advantages-item-span proxi_light">н</span>
-								<span class="advantages-item-span introscript">ий&nbsp;</span>
-								<span class="advantages-item-span lumberjack">г</span>
-								<span class="advantages-item-span proxi_light">ра</span>
-								<span class="advantages-item-span new-roman">ф</span>
-								<span class="advantages-item-span proxi_light">і</span>
-								<span class="advantages-item-span introscript">к</span>
-							</p>
-							<p class="advantages-item-text gsapFadeTop" data-delay="1.4" data-height="30" data-duration="2">ми працюємо повний робочий день: з 8:00 до 18:00</p>
-						</div>
-						<div class="advantages-item advantages-item_second">
-							<div class="advantages-block advantages-block_second gsapUp" data-delay="0.6" data-duration="0.05">
-								<img src="img/2.svg" alt="" class="advantages-svg">
-							</div>
-							<p class="advantages-item-title advantages-item-title_green gsapFadeTop" data-delay="0.6">
-								<span class="advantages-item-overlay advantages-item-overlay_green gsapSlideInLeft" data-delay="1.3"></span>
-								<span class="advantages-item-span lumberjack">Ве</span>
-								<span class="advantages-item-span introscript">лик</span>
-								<span class="advantages-item-span proxi_light">а</span>
-								<span class="advantages-item-span proxi_light">&nbsp;т</span>
-								<span class="advantages-item-span lumberjack">е</span>
-								<span class="advantages-item-span proxi_light">р</span>
-								<span class="advantages-item-span introscript">и</span>
-								<span class="advantages-item-span proxi_light">торія</span>
-							</p>
-							<p class="advantages-item-text gsapFadeTop" data-delay="1.5" data-height="30" data-duration="2">два поверхи простору для ігор, творчості та відпочинку</p>
-						</div>
-						<div class="advantages-item advantages-item_third">
-							<div class="advantages-block advantages-block_third gsapUp" data-delay="0.7" data-duration="0.05">
-								<img src="img/3.svg" alt="" class="advantages-svg">
-							</div>
-							<p class="advantages-item-title advantages-item-title_blue gsapFadeTop" data-delay="0.6">
-								<span class="advantages-item-overlay advantages-item-overlay_blue gsapSlideInLeft" data-delay="1.4"></span>
-								<span class="advantages-item-span proxi_light">Б</span>
-								<span class="advantages-item-span lumberjack">е</span>
-								<span class="advantages-item-span proxi_light">зп</span>
-								<span class="advantages-item-span lumberjack">е</span>
-								<span class="advantages-item-span introscript">к</span>
-								<span class="advantages-item-span proxi_light">а</span>
-							</p>
-							<p class="advantages-item-text gsapFadeTop" data-delay="1.6" data-height="30" data-duration="2">закриті майданчики для кожної групи дітей, охорона та відеонагляд за територією</p>
-						</div>
-						<div class="advantages-item advantages-item_fourth">
-							<div class="advantages-block advantages-block_fourth gsapUp" data-delay="0.8" data-duration="0.05">
-								<img src="img/4.svg" alt="" class="advantages-svg">
-							</div>
-							<p class="advantages-item-title advantages-item-title_red gsapFadeTop" data-delay="0.7">
-								<span class="advantages-item-overlay advantages-item-overlay_red gsapSlideInLeft" data-delay="1.5"></span>
-								<span class="advantages-item-span proxi_light">С</span>
-								<span class="advantages-item-span introscript">м</span>
-								<span class="advantages-item-span proxi_light">а</span>
-								<span class="advantages-item-span new-roman">ч</span>
-								<span class="advantages-item-span proxi_light">на</span>
-								<span class="advantages-item-span introscript">&nbsp;к</span>
-								<span class="advantages-item-span new-roman">ух</span>
-								<span class="advantages-item-span proxi_light">ня</span>
-							</p>
-							<p class="advantages-item-text gsapFadeTop" data-delay="1.7" data-height="30" data-duration="2">ланчі й обіди ми замовляємо <span class="nowrap">у дитячому</span> ресторані «Чиполіно»</p>
-						</div>
-						<div class="advantages-item advantages-item_fifth">
-							<div class="advantages-block advantages-block_fifth gsapUp" data-delay="0.9" data-duration="0.05">
-								<img src="img/5.svg" alt="" class="advantages-svg">
-							</div>
-							<p class="advantages-item-title advantages-item-title_yellow gsapFadeTop" data-delay="0.8">
-								<span class="advantages-item-overlay advantages-item-overlay_yellow gsapSlideInLeft" data-delay="1.6"></span>
-								<span class="advantages-item-span proxi_light">Ба</span>
-								<span class="advantages-item-span lumberjack">г</span>
-								<span class="advantages-item-span proxi_light">атосторонні</span>
-								<span class="advantages-item-span introscript">й</span>
-							</p>
-							<p class="advantages-item-title advantages-item-title_bottom advantages-item-title_yellow gsapFadeTop" data-delay="0.8">
-								<span class="advantages-item-overlay advantages-item-overlay_yellow advantages-item-overlay_bottom gsapSlideInLeft" data-delay="1.6"></span>
-								<span class="advantages-item-span proxi_light">роз</span>
-								<span class="advantages-item-span lumberjack">в</span>
-								<span class="advantages-item-span introscript">и</span>
-								<span class="advantages-item-span proxi_light">то</span>
-								<span class="advantages-item-span introscript">к</span>
-							</p>
-							<p class="advantages-item-text gsapFadeTop" data-delay="1.8" data-height="30" data-duration="2">від шахів до хореографії – <span class="nowrap">тут розкриваються</span> таланти кожної дитини.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="teacher">
-			<div class="container">
-				<div class="teacher-content">
-					<h4 class="about-subtitle">
-						<span class="subtitle-span proxi_light">На</span>
-						<span class="subtitle-span new-roman">ш</span>
-						<span class="subtitle-span proxi_light">і</span>
-						<span class="subtitle-span new-roman">&nbsp;уч</span>
-						<span class="subtitle-span introscript">и</span>
-						<span class="subtitle-span proxi_light">т</span>
-						<span class="subtitle-span lumberjack">е</span>
-						<span class="subtitle-span introscript">л</span>
-						<span class="subtitle-span proxi_light">і</span>
-					</h4>
-					<div class="teacher-list">
-						<div class="teacher-item teacher-item_blue">
-							<div class="teacher-block">
-								<img src="img/teacher1.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-						<div class="teacher-item teacher-item_yellow">
-							<div class="teacher-block">
-								<img src="img/teacher2.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-						<div class="teacher-item teacher-item_green">
-							<div class="teacher-block">
-								<img src="img/teacher3.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-						<div class="teacher-item teacher-item_darkred">
-							<div class="teacher-block">
-								<img src="img/teacher4.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-						<div class="teacher-item teacher-item_fiolet">
-							<div class="teacher-block">
-								<img src="img/teacher5.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-						<div class="teacher-item teacher-item_red">
-							<div class="teacher-block">
-								<img src="img/teacher6.jpg" alt="" class="teacher-img">
-							</div>
-							<div class="teacher-main">
-								<svg class="services-item-svg" xmlns="http://www.w3.org/2000/svg" width="408.062" height="114.25" viewBox="0 0 408.062 114.25">
-									<path id="bg_copy" data-name="bg copy" class="services-item-path" d="M369,639l0.131-75.245s5.965-4.187,9-6.117,6.12-3.733,9.223-5.461a211.058,211.058,0,0,1,38.475-16.41,231.084,231.084,0,0,1,40.185-8.88,223.664,223.664,0,0,1,41.03-1.56q10.279,0.57,20.5,2.145a200.956,200.956,0,0,1,20.222,4.243,188,188,0,0,1,19.689,6.418c1.605,0.643,3.217,1.263,4.8,1.954l2.384,1.018L577,542.174l1.179,0.536,1.1,0.538,2.181,1.075c1.452,0.723,2.912,1.424,4.356,2.163,11.567,5.873,22.9,12.261,33.831,19.174q8.2,5.183,16.114,10.667c5.265,3.654,10.429,7.384,15.5,11.123,10.159,7.474,19.921,15,29.768,21.746a184.544,184.544,0,0,0,30.513,17.343,172.436,172.436,0,0,0,16.4,6.175,149.255,149.255,0,0,0,16.981,4.394,105.505,105.505,0,0,0,31.443,1.689c0.992-.107.629,0.2,0.629,0.2H369Z" transform="translate(-369 -525.031)"></path>
-								</svg>
-								<h6 class="teacher-subtitle">Ольга Миколаївна Мищенко</h6>
-								<p class="teacher-info">Педагог гуртка «Весела абетка»</p>
-								<p class="teacher-text">Ольга Миколаївна має повну вищу педагогічну освіту та більше 30 років досвіду роботи з дітьми. Головним у спілкуванні з дошкільнятами вважає повагу, доброзичливість та справедливість. Бо щире та поважливе ставлення до дитини – це частина виховного процесу.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</section>
 	</main>
+	<div class="popup">
+		<div class="popup-content">
+			<h4 class="popup-title">Ваша заявка прийнята.</h4>
+			<p class="popup-text">Адміністратор зв’яжеться з вами впродовж <span class="nowrap">5 робочих днів.</span></p>
+			<h6 class="popup-thank">
+				<span class="popup-thank-span lumberjack">Д</span>
+				<span class="popup-thank-span proxi_light">я</span>
+				<span class="popup-thank-span introscript">к</span>
+				<span class="popup-thank-span new-roman">у</span>
+				<span class="popup-thank-span proxi_light">є</span>
+				<span class="popup-thank-span introscript">м</span>
+				<span class="popup-thank-span proxi_light">о</span>
+				<span class="popup-thank-span lumberjack">!</span>
+			</h6>
+			<a href="" class="registration-btn popup-btn js-close">Закрити</a>
+		</div>
+		<a href="" class="popup-close js-close"></a>
+	</div>
 	<footer class="footer footer_white">
     <div class="container">
         <div class="footer-content">

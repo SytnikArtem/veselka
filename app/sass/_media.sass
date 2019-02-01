@@ -8,12 +8,18 @@
     height: 840px
     top: -325px
   .first-overlay_top__item
-    height: 790px
+    height: auto
   .first-overlay-svg
     width: 1920px
   .about-overlay
-    height: 100%
+    height: auto
     top: 110px
+  .events-overlay
+    height: auto
+  .about-overlay_services
+    top: 0
+  .contacts-map
+    height: 900px
 @media only screen and (max-width : 1380px)
   .container
     max-width: 1180px
@@ -80,6 +86,57 @@
     height: 97px
   .third-img
     right: 10px
+  .teacher-block
+    height: 360px
+  .territory-left
+    width: 500px
+    flex-shrink: 0
+  .about-right-img_first
+    width: 50px
+    height: 75px
+  .about-right-img_second
+    width: 100px
+    height: 80px
+    left: 63px
+    top: 95px
+  .about-right-img_third
+    width: 110px
+    height: 112px
+    left: 170px
+    top: 23px
+  .about-right-img_fourth
+    width: 54px
+    height: 70px
+    top: 50px
+    right: 100px
+  .about-right-img_fifth
+    width: 79px
+    height: 47px
+  .about-right
+    width: 450px
+  .advantages-img
+    top: -50px
+    width: 600px
+  .advantages-block
+    width: 180px
+    height: 180px
+  .advantages-item-span
+    font-size: 20px
+  .events-right
+    width: 600px
+  .events-slider-item
+    padding: 0 40px 70px
+  .events-overlay_view
+    top: -50px
+  .events-info
+    margin-right: 50px
+    padding-right: 50px
+  .services-item-span
+    font-size: 36px
+  .events-slider .slick-dots
+    bottom: 18px
+  .registration-item
+    padding: 40px 25px 25px
 @media only screen and (max-width : 1200px)
   .container
     max-width: 1020px
@@ -118,6 +175,64 @@
     padding-bottom: 40px
   .subtitle-span
     font-size: 56px
+  .territory-right
+    margin-left: 50px
+  .about-right
+    margin-right: -25px
+  .advantages-img
+    top: -35px
+    width: 510px
+  .advantages-block
+    width: 160px
+    height: 160px
+  .advantages-block_first .advantages-svg, .advantages-block_second .advantages-svg, .advantages-block_fifth .advantages-svg
+    width: 80px
+  .advantages-block_third .advantages-svg
+    width: 65px
+  .advantages-block_fourth .advantages-svg
+    width: 50px
+  .advantages-item-text
+    padding-right: 15px
+    font-size: 15px
+  .teacher-main
+    padding: 0 25px 25px
+  .teacher-subtitle
+    font-size: 26px
+  .events-title
+    font-size: 52px
+  .services-item-content
+    padding: 40px 25px 120px
+  .services-item-span
+    font-size: 30px
+  .item-img-svg_first
+    width: 46px
+    height: 46px
+  .item-img-svg_second
+    width: 85px
+    height: 60px
+    top: 63px
+    left: 68px
+  .item-img-svg_third
+    width: 86px
+    height: 74px
+    left: 170px
+    top: 20px
+  .item-img-svg_fourth
+    width: 41px
+    height: 53px
+  .item-img-svg_fifth
+    width: 65px
+    height: 56px
+  .item-img
+    width: 410px
+  .item-img
+    top: 10px
+  .registration-row-item
+    width: 190px
+  .registration-row-item_fluid
+    width: 100%
+  .label_big
+    width: 180px
 @media only screen and (max-width : 1023px)
   .container
     max-width: 760px
@@ -220,6 +335,125 @@
     flex-direction: column
     align-items: flex-start
     margin-top: 40px
+  .about-right-img
+    display: none
+  .about-right-img_mobile
+    display: block
+    position: relative
+    width: 100%
+  .about-right
+    height: auto
+  .about-left
+    width: 380px
+    margin-right: 40px
+    flex-shrink: 0
+  .about-right
+    margin-top: 90px
+  .territory-left
+    width: 320px
+  .territory
+    margin-top: 90px
+  .advantages-img
+    width: 360px
+  .territory-right
+    margin-left: 30px
+  .advantages-list
+    flex-wrap: wrap
+    justify-content: center
+    padding-bottom: 20px
+  .advantages-item
+    width: 33.33%
+    margin-bottom: 30px
+  .advantages-block
+    width: 195px
+    height: 195px
+  .teacher-item
+    width: calc(50% - 15px)
+  .teacher-list
+    margin-top: 60px
+  .about
+    padding: 60px 0 0
+  .ter
+    padding: 20px 0 60px
+  .events-list .third-slider-item:nth-child(3n + 3), .events-list .third-slider-item:nth-child(3n + 2)
+    left: 0
+  .events-list
+    justify-content: center
+  .events-list .third-slider-item:nth-child(even) .third-slider-block
+    transform: rotate(3deg)
+    margin-left: 20px
+    margin-right: 0
+  .events-list .third-slider-item:nth-child(odd) .third-slider-block
+    transform: rotate(-5deg)
+    margin-right: 20px
+    margin-left: 0
+  .events-img
+    display: none
+  .events-img_mobile
+    display: block
+  .events-svg
+    right: 60px
+  .events-title
+    font-size: 38px
+  .events-right
+    width: 460px
+  .events-other-block
+    padding-left: 25px
+  .events-other-subtitle
+    font-size: 18px
+  .events-bottom
+    padding-bottom: 60px
+  .services-item
+    width: calc(50% - 15px)
+    margin: 0 0 30px
+  .services-list
+    justify-content: space-between
+  .services-rightimg-svg
+    display: none
+  .services-rightimg-svg_mobile
+    display: block
+    position: relative
+  .services-rightimg
+    width: 370px
+  .item
+    padding-bottom: 690px
+  .services-left
+    width: 310px
+  .item-img-svg
+    display: none
+  .item-img-svg_mobile
+    display: block
+  .item-img
+    width: 340px
+    height: auto
+  .item-img-svg_mobile
+    position: relative
+  .registration-item
+    width: 100%
+    padding: 55px 60px 60px
+    margin: 0 0 40px
+  .registration-content
+    flex-wrap: wrap
+  .registration-row-item
+    width: calc(50% - 20px)
+  .registration-row-item_fluid
+    width: 100%
+  .registration-row-flex
+    max-width: 380px
+  .registration-row-flex_custom
+    flex-direction: column
+    align-items: flex-start
+    .label_big
+      width: 100%
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+  .label_big
+    width: 50%
+  .registration-row-flex
+    max-width: 450px
+  .registration-btn
+    margin-top: 15px
 @media only screen and (max-width : 768px)
   .footer-left-item:first-child, .footer-lang
     display: none
@@ -346,5 +580,184 @@
   .footer-left-text_bottom
     margin-top: 5px
   .fancybox-button--close
+    top: 20px
+    right: 20px
+  .about-center
+    flex-direction: column
+    align-items: center
+  .about-left
+    margin-right: 0
+    width: 400px
+    padding-right: 20px
+  .about
+    padding: 50px 0 50px
+  .about-overlay
+    position: relative
+    height: 400px
+    top: 0
+    margin-top: -190px
+  .about-right
+    width: 400px
+    margin-right: 0
+    margin-top: 45px
+  .about-overlay .first-overlay-svg, .first-overlay-svg_events, .first-overlay-svg_contacts
+    left: -15%
+  .territory
+    margin-top: 0
+    flex-direction: column
+  .territory-left
+    width: 100%
+  .ter
+    margin-top: -220px
+    padding: 0 0 30px
+  .territory-right
+    width: 100%
+    margin: 45px 0 0
+  .advantages-item
+    width: 100%
+    display: flex
+    align-items: center
+  .advantages-block
+    flex-shrink: 0
+    width: 160px
+    height: 160px
+  .advantages-block_first, .advantages-block_third, .advantages-block_fifth
+    transform: rotate(-6deg)
+  .advantages-item-right
+    margin: 15px 0 0 10px
+  .advantages-item-span
+    font-size: 24px
+  .advantages-item-text
+    font-size: 16px
+    padding: 0
+  .advantages-block_second, .advantages-block_fourth
+    transform: rotate(6deg)
+  .advantages-item_second, .advantages-item_third, .advantages-item_fourth, .advantages-item_fifth
+    left: 0
+  .teacher-item
+    width: 100%
+    max-width: 400px
+  .teacher-list
+    justify-content: center
+  .teacher-subtitle
+    font-size: 32px
+  .advantages-img
+    position: relative
+    top: 0
+    left: 0
+    margin: 30px auto 0
+  .advantages-list
+    margin-top: 70px
+  .events-svg
+    position: static
+    width: 300px
+    margin: 30px auto
+  .events-img_mobile
+    width: 300px
+  .events
+    padding-top: 45px
+  .events-overlay
+    position: relative
+    margin-top: -460px
+  .events .events-overlay
+    margin-top: -170px
+  .even
+    margin-top: -570px
+  .events-list .third-slider-item:nth-child(odd) .third-slider-block
+    margin-left: 15px
+  .events-list  .third-slider-title, .events-list .third-slider-more
+    margin-left: 45px
+  .services-item
+    width: 100%
+    max-width: 400px
+  .services-list
+    justify-content: center
+  .services
+    padding-top: 50px
+  .about-overlay_services
+    margin-top: -180px
+  .ser
+    margin-top: -240px
+  .teacher-main
+    padding: 0 40px 40px
+  .services-item-content
+    padding: 40px 40px 120px
+  .services-item-span
+    font-size: 44px
+  .services-rightimg
+    position: static
+    height: auto
+    margin: 30px auto 0
+  .events-top
+    flex-direction: column
+    align-items: center
+  .events-title
+    font-size: 46px
+  .events-date
+    margin-bottom: 35px
+  .events-right
+    width: 480px
+    margin: 40px 0 0 0
+  .events-bottom
+    flex-direction: column
+  .events-info
+    width: 100%
+    padding: 0 0 50px 0
+    margin: 0 0 40px 0
+    border-right: none
+    border-bottom: 1px solid #efefef
+  .events-bottom
+    padding-top: 0
+  .even-bottom
+    margin-top: -225px
+  .events-slider .slick-dots
+    bottom: 12px
+  .events-other-block
+    padding-left: 35px
+  .events-other-subtitle
+    font-size: 32px
+    //max-width: 250px
+  .events-other
+    width: 100%
+  .item-img
+    position: relative
+  .services-left
+    width: 100%
+  .item-img
+    margin: 35px auto 0
+    right: 0
+  .item
+    padding-bottom: 180px
+  .item-bottom-content
+    padding-bottom: 60px
+  .contacts
+    padding-top: 50px
+    .events-overlay
+      margin-top: -100px
+  .contacts-map
+    height: 615px
+    margin-top: -500px
+  .registration-content
+    width: calc(100% + 80px)
+    margin-left: -40px
+    padding: 30px 0 50px
+  .registration-row-item
+    width: 100%
+  .registration-row
+    flex-wrap: wrap
+  .registration-row-item
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+  .registration-item
+    padding: 35px 40px 40px
+    margin-bottom: 0
+  .registration-item-text
+    margin-top: 15px
+  .registration-form
+    margin-top: 35px
+  .registration-overlay
+    display: none
+  .popup-close
     top: 20px
     right: 20px

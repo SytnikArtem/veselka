@@ -8,6 +8,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         fade: true,
         dots: true,
+        autoplay: true,
+		autoplaySpeed:3000,
         arrows: false,
         infinite: true,
         speed: 1000,
@@ -43,17 +45,7 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
     $('.third-btn_next').click(function () {
@@ -251,7 +243,7 @@ $(document).ready(function () {
         $('.gsapSlideInLeft').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 0.5;
-            var position = $(this).width() + 10;
+            var position = $(this).width();
 
             var tween = TweenMax.fromTo(this, animationDuration,
                 {x: -position},
@@ -282,7 +274,7 @@ $(document).ready(function () {
         })
     }
     function gsapUp() {
-        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onCenter"}});
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter"}});
 
         $('.gsapUp').each(function() {
             var animationDelay = $(this).data("delay") || 1;
@@ -353,6 +345,14 @@ $(document).ready(function () {
     }
 
 
+    //Открытие попапа благодарности (страница регистрации)
+    $('.js-send').click(function(){
+        $('.popup').addClass('active');
+    });
+    $('.js-close').click(function(e){
+        e.preventDefault();
+        $('.popup').removeClass('active');
+    });
 });
 
 
