@@ -108,7 +108,6 @@ $(document).ready(function () {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 0.5;
             var position = $(this).height();
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {y: -position},
                 {y: 0, ease: Power4.easeOut, delay: animationDelay, force3D:true}
@@ -125,7 +124,6 @@ $(document).ready(function () {
         $('.gsapWidth').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 1.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {width: 0},
                 {width: "100%", ease: Power2.easeOut, delay: animationDelay}
@@ -142,7 +140,6 @@ $(document).ready(function () {
         $('.gsapWidthBottom').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 1.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {width: 0},
                 {width: "100%", ease: Power2.easeOut, delay: animationDelay}
@@ -158,7 +155,6 @@ $(document).ready(function () {
         $('.gsapWidthMinTop').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 1.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {width: "100%"},
                 {width: "0", ease: Power2.easeOut, delay: animationDelay}
@@ -175,7 +171,6 @@ $(document).ready(function () {
         $('.gsapWidthMinBottom').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 1.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {width: "100%"},
                 {width: "0", ease: Power2.easeOut, delay: animationDelay}
@@ -191,7 +186,6 @@ $(document).ready(function () {
         $('.gsapHeight').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 0.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {height: 0},
                 {height: "100%", ease: Power4.easeOut, delay: animationDelay}
@@ -208,7 +202,6 @@ $(document).ready(function () {
         $('.gsapFade').each(function() {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 0.5;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {opacity: 0},
                 {opacity: 1, ease: Power4.easeOut, delay: animationDelay}
@@ -226,7 +219,6 @@ $(document).ready(function () {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 1;
             var position = $(this).data("height") || $(this).height();
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {opacity: 0, y: position},
                 {opacity: 1, y: 0, ease: Power4.easeOut, delay: animationDelay, force3D:true}
@@ -280,7 +272,6 @@ $(document).ready(function () {
             var animationDelay = $(this).data("delay") || 1;
             var animationDuration = $(this).data("duration") || 0.2;
             var position = $(this).height() * 2;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {y: position},
                 {y: 0, ease: Power4.ease, delay: animationDelay, force3D:true}
@@ -298,7 +289,6 @@ $(document).ready(function () {
             var animationDelay = $(this).data("delay") || 0.1;
             var animationDuration = $(this).data("duration") || 1;
             var position = $(this).height() * 2;
-            console.log(animationDelay);
             var tween = TweenMax.fromTo(this, animationDuration,
                 {transform: "scale(0)"},
                 {transform: "scale(1)", ease: Power4.ease, delay: animationDelay, force3D:true}
@@ -316,7 +306,6 @@ $(document).ready(function () {
             var animationDelay = $(this).data("delay") || 0.1;
             var animationDuration = $(this).data("duration") || 1;
             var position = $(this).height() * 2;
-            console.log(animationDelay);
             // CustomEase.create("custom", "M0,0 C0.126,0.382 0.226,1.082 0.384,1.23 0.576,1.41 0.606,0.678 1,1");
             var tween = TweenMax.fromTo(this, animationDuration,
                 {transform: "translateY(-100px) rotateZ(25deg)", opacity: 0},

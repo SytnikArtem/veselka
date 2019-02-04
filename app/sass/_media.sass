@@ -20,6 +20,8 @@
     top: 0
   .contacts-map
     height: 900px
+  .about-overlay_gallery
+    top: 0
 @media only screen and (max-width : 1380px)
   .container
     max-width: 1180px
@@ -137,6 +139,8 @@
     bottom: 18px
   .registration-item
     padding: 40px 25px 25px
+  .services-item-svg
+    height: auto
 @media only screen and (max-width : 1200px)
   .container
     max-width: 1020px
@@ -233,6 +237,8 @@
     width: 100%
   .label_big
     width: 180px
+  .gallery-filter-item
+    font-size: 14px
 @media only screen and (max-width : 1023px)
   .container
     max-width: 760px
@@ -454,6 +460,12 @@
     max-width: 450px
   .registration-btn
     margin-top: 15px
+  .gallery-item
+    width: calc(50% - 15px)
+  .gallery-filter
+    flex-wrap: wrap
+  .gallery-filter-item
+    margin-bottom: 5px
 @media only screen and (max-width : 768px)
   .footer-left-item:first-child, .footer-lang
     display: none
@@ -761,3 +773,24 @@
   .popup-close
     top: 20px
     right: 20px
+  .about-overlay_gallery
+    margin-top: -60px
+    position: absolute
+  .gallery-filter
+    flex-wrap: nowrap
+    justify-content: flex-start
+  .gallery-scroll
+    overflow: scroll
+    width: calc(100% + 40px)
+  .gallery-filter-item:last-child
+    margin-right: 40px
+  .gallery-item
+    width: calc(50% - 10px)
+    height: 140px
+    margin-bottom: 20px
+  .fancybox-navigation .fancybox-button--arrow_left
+    margin-left: 20px
+  .fancybox-navigation .fancybox-button--arrow_right
+    margin-right: 20px
+  .fancybox-navigation .fancybox-button
+    top: calc(100% - 60px)
